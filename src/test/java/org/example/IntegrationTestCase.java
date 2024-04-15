@@ -17,7 +17,8 @@ import java.time.LocalDate;
 
 import static org.junit.Assert.fail;
 
-public class IntegrationTesting {
+public class IntegrationTestCase {
+    //
     StudentValidator studentValidator = new StudentValidator();
     TemaValidator temaValidator = new TemaValidator();
     String filenameStudent = "fisiere/Studenti.xml";
