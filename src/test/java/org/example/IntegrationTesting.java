@@ -3,10 +3,7 @@ package org.example;
 import domain.Nota;
 import domain.Student;
 import domain.Tema;
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
 import repository.NotaXMLRepo;
 import repository.StudentXMLRepo;
 import repository.TemaXMLRepo;
@@ -17,10 +14,8 @@ import validation.TemaValidator;
 import validation.ValidationException;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 import static org.junit.Assert.fail;
-import static org.mockito.Mockito.mock;
 
 public class IntegrationTesting {
     StudentValidator studentValidator = new StudentValidator();
