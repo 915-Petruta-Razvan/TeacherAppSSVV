@@ -166,9 +166,9 @@ public class Service {
         int predare = calculeazaSPredare(nota.getData());
         if(predare != tema.getDeadline()){
             if (predare-tema.getDeadline() == 1){
-                nota.setNota(nota.getNota()-2.5);
+                nota.setNota(nota.getNota() - 2.5);
             }
-            else{
+            else if (predare-tema.getDeadline() > 1){
                 throw new ValidationException("Studentul nu mai poate preda aceasta tema!");
             }
         }
